@@ -23,3 +23,12 @@
     background-color: black;
     color: white;
 }
+
+.respDiv {
+    width: 80%;
+}
+@media (max-width: 500px) {
+    .respDiv {
+        width: 95%;
+    }
+}
