@@ -26,6 +26,7 @@
 
 .respDiv {
     width: 80%;
+    padding-left: 3%;
 }
 @media (max-width: 500px) {
     .respDiv {
