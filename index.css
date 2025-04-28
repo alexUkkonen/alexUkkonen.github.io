@@ -27,10 +27,12 @@
 .respDiv {
     width: 80%;
     margin-left: 2%;
+    margin-bottom: 5%;
 }
 @media (max-width: 500px) {
     .respDiv {
         width: 95%;
         margin-left: 1%;
+        margin-bottom: 3%;
     }
 }
