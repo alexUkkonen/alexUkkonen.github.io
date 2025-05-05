@@ -57,7 +57,7 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() { 
+        document.addEventListener("DOMContentLoaded", function() { //an eventlistener means the program is on standby for when x happens. In this case x is when the DOM loads meaning when the computer recieves the information.
             window.scrollTo(0, 0); // as soon as the information is received, the page will be set to viewing the top of the page
         });
 
@@ -66,12 +66,13 @@
                 const target = document.querySelector(window.location.hash); // we make a constant which is the target that we want to scroll to
                 if (target) { // if we find a functioning link with a # that matches an existing id
                     target.scrollIntoView({ behavior: 'smooth' }); // scroll to the target smoothly from the top of the page
-                    setTimeout(() => { // delay the activation
-                        history.replaceState(null, null, "https://alexukkonen.github.io/game_spotlight.html"); // replace the URL with this to ensure you don't get snapped while reloading the page
-                    }, 500); // the amount of time
+                    
                 }
             }
         };
+        setTimeout(() => { // delay the activation
+                        history.replaceState(null, null, "https://alexukkonen.github.io/game_spotlight.html"); // replace the URL with this to ensure you don't get snapped while reloading the page
+                    }, 10000); // the amount of time
     </script>
 
 </body>
