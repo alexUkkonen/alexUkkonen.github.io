@@ -59,7 +59,10 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() { //an eventlistener means the program is on standby for when x happens. In this case x is when the DOM loads meaning when the computer recieves the information.
             setTimeout(() => {
-            window.scrollTo(0, 0);  // as soon as the information is received, the page will be set to viewing the top of the page
+            window.scroll({
+                top: 0;
+                behavior:"instant";
+            });  // as soon as the information is received, the page will be set to viewing the top of the page
             console.log("eventListen works")
         })}, 100);
 
