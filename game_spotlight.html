@@ -58,8 +58,10 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() { //an eventlistener means the program is on standby for when x happens. In this case x is when the DOM loads meaning when the computer recieves the information.
-            window.scrollTo(0, 0);
-            console.log("eventListen works") // as soon as the information is received, the page will be set to viewing the top of the page
+            if (document.body.scrollHeight > window.innerHeight) { //check to see if scrolling is possible
+                window.scrollTo(0, 0);  // as soon as the information is received, the page will be set to viewing the top of the page
+            }
+            console.log("eventListen works")
         });
 
         window.onload = function() { // activates when page is fully loaded
