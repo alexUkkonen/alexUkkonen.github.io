@@ -61,8 +61,9 @@
                 const target = document.querySelector(window.location.hash); //we make a constant witch is the target that we want to scroll to
                 if (target) { //if we find a functioning link with a # that matches an existing id
                     target.scrollIntoView({behavior: 'smooth',}); //scroll to the target smoothly from the top of the page
-                    console.log("I scrolled");
-                    history.replaceState(null, null, "https://alexukkonen.github.io/game_spotlight.html"); 
+                    setTimeout(() => {    //delay the activation
+                        history.replaceState(null, null, "https://alexukkonen.github.io/game_spotlight.html") //replace the url with this to enshure you don't get snapped while reloading the page
+                    },  500) //the amount of tome
                 }
                 
             }
