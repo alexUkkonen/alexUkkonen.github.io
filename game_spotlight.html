@@ -53,12 +53,7 @@
     </div>
 
     <script>
-        window.onload = function() {
-            window.scrollTo(0, 0);
-            console.log("onload works");
-        };
-
-        document.addEventListener("DOMContentLoaded", function() { //event listener means wait for x to happen. DIMContent... means it waits for the page to actually load
+        window.onload(
             if (window.location.hash) { //this checks if the link that brought you to the page has a # (hash-tag) in it
                 const target = document.querySelector(window.location.hash); //we make a constant witch is the target that we want to scroll to
                 if (target) { //if we find a functioning link with a # that matches an existing id
@@ -66,10 +61,9 @@
                     console.log("I scrolled");
                 }
             }
-            console.log("I Load")
-        });
+        );
 
     </script>
-    
+
 </body>
 </html>
