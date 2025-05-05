@@ -60,7 +60,7 @@
                 if (target) { //if we find a functioning link with a # that matches an existing id
                     target.scrollIntoView({behavior: 'smooth',}); //scroll to the target smoothly from the top of the page
                     console.log("I scrolled");
-                    window.location.hash = ``;
+                    history.replaceState(null, null, "https://alexukkonen.github.io/game_spotlight.html"); 
                 }
                 
             }
