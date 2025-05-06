@@ -73,3 +73,6 @@ p {
     background-color: aqua;
     overflow: hidden;
 }
+hr {
+    color: aqua;
+}
