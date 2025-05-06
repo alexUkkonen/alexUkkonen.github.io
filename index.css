@@ -69,3 +69,7 @@ img {
 p {
     line-height: 22px;
 }
+.footer {
+    background-color: aqua;
+    overflow: hidden;
+}
